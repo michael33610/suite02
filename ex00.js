@@ -20,8 +20,7 @@
     L'idée est d'avoir une branche master propre,
     contenant uniquement les exercices originels ou fonctionnels;
 
-    N'oubliez pas de me fournir l'adresse de votre dépôt github
-    en l'envoyant par mail à l'adresse jonathan@wildcodeschool.fr
+    Pour me faire parvenir vos avancées, faites une pull request ;)
 
     Bonne continuation
 
