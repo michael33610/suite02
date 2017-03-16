@@ -1,13 +1,26 @@
+
 /*
 
-    Smallest Multiple
+    Bubble sort
 
-    2520 is the smallest number that can be divided by each of the numbers
-    from 1 to 10 without any remainder.
+    Write a function "bubbleSort".
 
-    What is the smallest positive number that is
-    evenly divisible by all of the numbers from 1 to 20?
+    The function takes and sorts an array.
 
+    The array contains only positive numbers.
+
+    Exemple:
+    [8, 3, 0] -> [0, 3, 8]
+
+    Forbidden functions:
+    sort
+
+    Tips:
+    use google
+
+    Write your own tests !
+    
 */
 
 // write your code below this comment
+

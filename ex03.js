@@ -1,22 +1,23 @@
 /*
 
-    Eval Expr
+    Two ways currency converter
 
-    Write a function that can solve simples arithmetic calculs;
+    1) Write one function "numberToPrice" that convert a number to a price.
 
-    We will pass only positive integer numbers.
+        If we got the number 4 in parameter,
+        you need to return a string that contain "4,00€";
 
-    Exemples:
+    2) Write a second function "priceToNumber" that convert a price to a number.
 
-    evalExpr(4, 5, "*"); // 20
-    evalExpr(3, 3, "+"); // 6
-    evalExpr(2, 2, "%"); // 0
-    evalExpr(3, 3, "-"); // 0
-    evalExpr(10, 2, "/"); // 5
+        If we got the string "4,59€" in parameter,
+        you need to return a float number that is equal to 4,59;
 
-    evalExpr(10, 0, "/"); // 0
+    3) If we pass an empty string or negative number, return 0 or empty string;
 
-    Validation:
-    I want to see at least 6 functions.
+    Is 0 positive or negative ?
+
+    Write your own tests !
 
 */
+
+// write your code below this comment

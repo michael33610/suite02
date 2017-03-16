@@ -1,16 +1,18 @@
 /*
 
-    Find Sum By Multiples
+    Smallest Multiple
 
-    If we list all the natural numbers below 10 that are
-    multiples of 3 or 5, we get 3, 5, 6 and 9.
+    2520 is the smallest number that can be divided by each of the numbers
+    from 1 to 10 without any remainder.
 
-    The sum of these multiples is 23.
+    What is the smallest positive number that is
+    evenly divisible by all of the numbers from 1 to 20?
 
-    Find the sum of all the multiples of 3 or 5 below 1000.
+    Write a function "smallestMultipleFor" that solves this problem.
 
-    Write a function that solve this problem
-
+    Write your own tests !
+    
 */
 
 // write your code below this comment
+
