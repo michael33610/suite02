@@ -21,6 +21,9 @@
     contenant uniquement les exercices originels ou fonctionnels;
 
     Pour me faire parvenir vos avancées, faites une pull request ;)
+    
+    EN CAS DE PROBLEMES DE SUJET OU AUTRE CONCEPTION:
+    Faire une issue sur github.
 
     Bonne continuation
 
