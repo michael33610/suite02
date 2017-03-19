@@ -24,3 +24,26 @@
 
 // write your code below this comment
 
+console.log(bubbleSort([7,9,11,0,4]));
+
+function bubbleSort(param){
+    var temp;
+    var flgPermut=true
+
+    for(;flgPermut==true;){
+        flgPermut=false;
+        for(let i=0;i < param.length - 1;i++){
+            if (param[i]>param[i+1]) {
+                temp=param[i+1];
+                param[i+1]=param[i];
+                param[i]=temp;
+                flgPermut=true;
+            }
+        }    
+    }
+
+
+    return(param);
+
+}
+
