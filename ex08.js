@@ -49,3 +49,100 @@
 */
 
 // write your own code below this comment
+
+
+var fL=0;
+var fC=0;
+var fT=0;
+console.log(parcourMatrice(
+        [
+        "xxxxxxxxxxx",
+        "xxxx...x..x",
+        "xxxx...x..x",
+        "xxxx...xxxx",
+        "xxxxxxx..xx",
+        "xxxxxxxxxxx",
+        "....xx...xx",
+        "....xx...xx",
+        "....xx...xx",
+        "....xxxxxxx",
+    ]
+));
+
+ 
+
+function parcourMatrice(param){
+    var pL=0;
+    var pC=0;
+
+    //console.log(param);
+
+    for(let i=0;i<param.length;i++){
+        for( let j=0;j<param[i].length;j++){
+            if (param[i][j]==".") {
+                //j'ai trouve un depart
+                pL=i;
+                pC=j;
+                chercheCarre(param,pL,pC);    
+            }
+        }
+    }
+    //console.log(param);
+
+    for(let i=0; i < param.length ; i++){
+        var ligne="";
+        for(j=0;j < param[i].length;j++){
+            if ((i>=fL) && (i<fL+fT)){
+                if ((j>=fC) && (j<fC+fT)){
+                    ligne=ligne+"O"  
+                } else {
+                    ligne=ligne+"x"
+                }            
+            } else {
+                ligne=param[i];
+            }
+        }
+        param[i]=ligne;
+    }
+
+ //   console.log(param);
+
+    return(param);
+}
+
+
+function chercheCarre(param,pL,pC){
+    var j=0;
+    var j=0;
+    for(i=pL;i<param.length;i++){
+        var nbpoint=0;
+        for(j=pC;j<param[i].length;j++){
+            if (param[i][j]==".") {
+                nbpoint++;
+            } else {
+                break;
+            }
+        }
+        // optimiser en verifiant sit le nombre de point est au moins egale au max
+
+        // nbpoint represente la largeur max du carre
+        var flgTestCol=true;
+        for(j=0 ; j < nbpoint ; j++){
+            for(i=0 ; i<nbpoint ; i++){
+                if ((i+pL)>=param.length) break;
+                if( (param[i+pL][j+pC]!=".") ){ 
+                    nbpoint=nbpoint--;
+                    flgTestCol=false;
+                }
+            }
+            if (flgTestCol==false) break;
+        }
+        // nombre de point en hauteur
+        //if ((nbpoint>=fT)&&(pL>=fL)&&(pC>=fC)){
+        if (nbpoint>=fT){    
+            fT=nbpoint; fL=pL-nbpoint+1; fC=pC;
+        }
+        return;
+    }
+}
+
